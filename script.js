@@ -105,6 +105,226 @@ document.addEventListener('DOMContentLoaded', () => {
       embroidery: "Antique Gold Zardozi, Drop Bead Hangings",
       fittime: "12 - 15 Days",
       desc: "A versatile golden brocade blouse featuring detailed antique gold zardozi stitching on the sleeves and neck, finished with elegant pearl and gold drop beads along the lower hem."
+    },
+    11: {
+      title: "Signature Saree Pre-Pleating & Box Folding",
+      category: "prepleating",
+      categoryLabel: "Saree Pre-Pleating",
+      code: "DA-SP-11",
+      fabrics: "Silk, Georgette, Organza, Cotton",
+      embroidery: "Bespoke Pressing, Exact Pleat Customization",
+      fittime: "24 - 48 Hours",
+      desc: "Our premium signature pre-pleating service. We measure and fold the pleats to your height, steam-press them to hold shape, and pack the saree in a travel-ready box. Wear your saree in under 2 minutes!"
+    },
+    12: {
+      title: "Bridal Silk Saree Pre-Pleated Setup",
+      category: "prepleating",
+      categoryLabel: "Saree Pre-Pleating",
+      code: "DA-SP-12",
+      fabrics: "Heavy Kanjeevaram, Banarasi Silk",
+      embroidery: "Shoulder Pleat Setting, Starch Setting",
+      fittime: "24 - 48 Hours",
+      desc: "Specialist bridal saree pre-pleating. Perfect drape alignment for heavy silks, ensuring you remain comfortable and pristine all day without pins sliding or pleats shifting."
+    },
+    13: {
+      title: "Magenta Silk Thread Bridal Bangle Set",
+      category: "bangles",
+      categoryLabel: "Thread Bangles",
+      code: "DA-TB-13",
+      fabrics: "Silk Thread, Acrylic Bases",
+      embroidery: "Handcrafted Kundan Work, Gold Stone Chains",
+      fittime: "3 - 5 Days",
+      desc: "Bespoke magenta silk thread bangles customized with sparkling gold stone chains and kundan flower patterns to match your wedding attire."
+    },
+    14: {
+      title: "Emerald & Gold Designer Bangle Set",
+      category: "bangles",
+      categoryLabel: "Thread Bangles",
+      code: "DA-TB-14",
+      fabrics: "Silk Thread, Metal Liners",
+      embroidery: "Zircon Stone Lacing, Bead Accents",
+      fittime: "2 - 3 Days",
+      desc: "Handcrafted emerald green silk thread bangles paired with gold bead accents and shimmering zircon stone borders."
+    },
+    15: {
+      title: "Peacock Blue Kundan Thread Bangles",
+      category: "bangles",
+      categoryLabel: "Thread Bangles",
+      code: "DA-TB-15",
+      fabrics: "Premium Silk Thread",
+      embroidery: "Rhinestone Patterns, Kundan Settings",
+      fittime: "2 - 3 Days",
+      desc: "Deep peacock blue thread bangles decorated with beautiful kundan settings and gold velvet thread overlays."
+    },
+    16: {
+      title: "Pastel Pink Silk Thread Bangles",
+      category: "bangles",
+      categoryLabel: "Thread Bangles",
+      code: "DA-TB-16",
+      fabrics: "Silk Thread, Plastic Base",
+      embroidery: "Moti (Pearl) Laces, Gold Threads",
+      fittime: "2 - 3 Days",
+      desc: "Soft pink thread bangles wrapped with gold threads and white moti strings for a classic sweet appearance."
+    },
+    17: {
+      title: "Royal Maroon Bridal Chooda Set",
+      category: "bangles",
+      categoryLabel: "Thread Bangles",
+      code: "DA-TB-17",
+      fabrics: "Heavy Silk Thread, Velvet Bases",
+      embroidery: "Heavy Kundan Flowers, Multi-stone Rows",
+      fittime: "3 - 5 Days",
+      desc: "A stunning multi-piece heavy bridal bangle set in royal maroon and gold threadwork featuring kundan highlights."
+    },
+    18: {
+      title: "Peach Organza Kids Lehenga Frock",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-18",
+      fabrics: "Organza, Silk Lining",
+      embroidery: "Soft Gota Borders, Ribbon Back-Bow",
+      fittime: "7 - 10 Days",
+      desc: "A comfortable peach georgette and organza kids frock featuring a soft cotton inner lining and elegant gold border details."
+    },
+    19: {
+      title: "Pastel Pink Floral Kids Frock",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-19",
+      fabrics: "Pure Cotton, Soft Net",
+      embroidery: "Ivory Thread Borders, Puff Sleeves",
+      fittime: "7 - 10 Days",
+      desc: "Sweet kids party wear frock in pastel pink featuring lightweight floral thread overlays and comfortable puff sleeves."
+    },
+    20: {
+      title: "Golden Brocade Kids Anarkali Dress",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-20",
+      fabrics: "Silk Brocade, Cotton Lining",
+      embroidery: "Gota Patti Lace Borders, Contrast Piping",
+      fittime: "7 - 10 Days",
+      desc: "A rich, traditional gold brocade kids Anarkali suit with contrast hot pink borders and comfortable cotton lining."
+    },
+    21: {
+      title: "Yellow Floral Kids Dress",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-21",
+      fabrics: "Satin, Soft Net Layers",
+      embroidery: "Satin Bow accents, Scalloped Edges",
+      fittime: "7 - 10 Days",
+      desc: "Bright yellow celebratory frock featuring floral overlays and a beautiful handmade rear satin bow."
+    },
+    22: {
+      title: "Sky Blue Layered Tulle Gown",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-22",
+      fabrics: "Layered Tulle, Silk Bodice",
+      embroidery: "Satin Ribbons, Shimmering Bead Details",
+      fittime: "7 - 10 Days",
+      desc: "Princess-style layered blue tulle gown with a soft inner cotton layer to keep kids comfortable throughout the event."
+    },
+    23: {
+      title: "Red Velvet Kids Festive Lehenga",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-23",
+      fabrics: "Micro Velvet, Chanderi Silk",
+      embroidery: "Zari embroidery, Kundan Necklines",
+      fittime: "7 - 10 Days",
+      desc: "Royal red velvet lehenga choli set tailored to fit kids comfortably, adorned with gold zari details."
+    },
+    24: {
+      title: "Mint Green Organza Kids Frock",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-24",
+      fabrics: "Organza, Cotton lining",
+      embroidery: "Lightweight Layers, Ribbon Sash",
+      fittime: "7 - 10 Days",
+      desc: "A fresh and playful mint green frock featuring multiple lightweight organza layers and a soft pink sash ribbon."
+    },
+    25: {
+      title: "Royal Blue Kids Pattu Langa Dress",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-25",
+      fabrics: "Kanchipuram Silk, Zari borders",
+      embroidery: "Traditional Border styling, Zari piping",
+      fittime: "7 - 10 Days",
+      desc: "Traditional South Indian style silk skirt and blouse set for kids, made from pure Kanchipuram silk with gold borders."
+    },
+    26: {
+      title: "Lavender Net Kids Party Gown",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-26",
+      fabrics: "Soft Net, Satin Lining",
+      embroidery: "Sequined Bodice, Tulle layers",
+      fittime: "7 - 10 Days",
+      desc: "A shiny lavender birthday gown with a sequined corset top and fluffy layered net skirt."
+    },
+    27: {
+      title: "Festive Orange Kids Salwar Kameez",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-27",
+      fabrics: "Silk Crepe, Georgette Dupatta",
+      embroidery: "Simple Mirror borders, Zari trim",
+      fittime: "7 - 10 Days",
+      desc: "Bright orange kids salwar kameez featuring mirror highlights on the collar and a matching lightweight dupatta."
+    },
+    28: {
+      title: "Maroon Velvet Kids Frock",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-28",
+      fabrics: "Silk Velvet, Cotton trim",
+      embroidery: "Lace details, Sweetheart collars",
+      fittime: "7 - 10 Days",
+      desc: "Rich maroon velvet frock featuring soft cotton collar borders, designed to be warm and elegant."
+    },
+    29: {
+      title: "Pink Ruffled Kids Designer Gown",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-29",
+      fabrics: "Net, Soft Lining",
+      embroidery: "Layered Ruffles, Sequin work",
+      fittime: "7 - 10 Days",
+      desc: "A modern tiered ruffled gown in candy pink, featuring a shimmering bodice perfect for birthdays."
+    },
+    30: {
+      title: "Green Silk Kids Kurta Set",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-30",
+      fabrics: "Pure Raw Silk",
+      embroidery: "Thread embroidery, Gold Buttons",
+      fittime: "7 - 10 Days",
+      desc: "Traditional green silk kurta pajama set finished with elegant gold button highlights and simple neckline stitching."
+    },
+    31: {
+      title: "Golden Organza Kids Lehenga Set",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-31",
+      fabrics: "Organza, Cotton lining",
+      embroidery: "Zari Lace borders, Hanging Tassels",
+      fittime: "7 - 10 Days",
+      desc: "Golden organza lehenga choli with soft cotton liners, finished with tiny gold hangings and laces."
+    },
+    32: {
+      title: "Navy Blue Silk Kids Party Frock",
+      category: "kids",
+      categoryLabel: "Kids Wear",
+      code: "DA-KD-32",
+      fabrics: "Raw Silk, Net layers",
+      embroidery: "Gold Ribbon borders, Stone details",
+      fittime: "7 - 10 Days",
+      desc: "A smart raw silk navy blue frock with gold ribbon highlights and sparkling stone linings on the collar."
     }
   };
 

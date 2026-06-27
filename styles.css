@@ -1823,6 +1823,14 @@ textarea.form-control {
   transform: translateY(0);
 }
 
+@media (max-width: 768px) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 /* Testimonials Layout */
 .testimonials {
   background-color: var(--bg-secondary);

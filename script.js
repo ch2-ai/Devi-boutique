@@ -177,24 +177,24 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: "A stunning multi-piece heavy bridal bangle set in royal maroon and gold threadwork featuring kundan highlights."
     },
     18: {
-      title: "Peach Organza Kids Lehenga Frock",
-      category: "kids",
-      categoryLabel: "Kids Wear",
-      code: "DA-KD-18",
-      fabrics: "Organza, Silk Lining",
-      embroidery: "Soft Gota Borders, Ribbon Back-Bow",
-      fittime: "7 - 10 Days",
-      desc: "A comfortable peach georgette and organza kids frock featuring a soft cotton inner lining and elegant gold border details."
+      title: "Peach Orange Pre-Pleated Lehenga Saree",
+      category: "prepleating",
+      categoryLabel: "Saree Pre-Pleating",
+      code: "DA-SP-18",
+      fabrics: "Premium Organza, Crepe Silk Lining",
+      embroidery: "Gota Patti Work, Satin Box Folds",
+      fittime: "24 - 48 Hours",
+      desc: "A stunning peach orange lehenga-style saree drape featuring pre-pleated, steam-pressed folds ready to wear in under 2 minutes. Elegant structure with box folding convenience."
     },
     19: {
-      title: "Pastel Pink Floral Kids Frock",
-      category: "kids",
-      categoryLabel: "Kids Wear",
-      code: "DA-KD-19",
-      fabrics: "Pure Cotton, Soft Net",
-      embroidery: "Ivory Thread Borders, Puff Sleeves",
-      fittime: "7 - 10 Days",
-      desc: "Sweet kids party wear frock in pastel pink featuring lightweight floral thread overlays and comfortable puff sleeves."
+      title: "Pastel Pink Floral Pre-Pleated Saree",
+      category: "prepleating",
+      categoryLabel: "Saree Pre-Pleating",
+      code: "DA-SP-19",
+      fabrics: "Soft Silk, Georgette Blend",
+      embroidery: "Pre-folded Shoulder Pleats, Waist Drape Setting",
+      fittime: "24 - 48 Hours",
+      desc: "An elegant pastel pink floral saree pre-pleated and box-folded with custom-measured folds according to height, making bridal and festive drapes quick and hassle-free."
     },
     20: {
       title: "Golden Brocade Kids Anarkali Dress",

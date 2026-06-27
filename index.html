@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devi Atelier — Haute Couture & Designer Boutique Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore Devi Atelier - Premium fashion boutique showcasing custom-tailored bridal lehengas, designer sarees, bespoke blouses, and contemporary Indo-Western wear.">
+  <meta name="keywords" content="Boutique, Custom Tailoring, Bridal Lehenga, Designer Saree, Devi Atelier, Bespoke Fashion, Blouse Design">
+  <meta name="author" content="Devi Atelier">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devi Atelier — Designer Boutique & Custom Tailoring">
+  <meta property="og:description" content="Immersive showcase of bespoke designer outfits. Custom lehengas, sarees, blouses, and Indo-Western couture crafted to perfection.">
+  <meta property="og:image" content="images/work-1.jpg">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVIGATION BAR
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo" id="nav-logo">
+        DEVI<span>ATELIER</span>
+        <span class="logo-sub">HAUTE COUTURE</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Collection</a></li>
+        <li><a href="#about" class="nav-link">Atelier</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Consultation</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-primary" id="header-share-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-share-nodes"></i> Share
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <i class="fa-solid fa-star"></i>
+            <span>Exquisite Bespoke Tailoring</span>
+          </div>
+          <h1 class="hero-title">Crafting Your <span>Dream Outfits</span> With Perfect Fits</h1>
+          <p class="hero-description">
+            Welcome to Devi Atelier. We design and stitch elegant bridal lehengas, luxurious silk sarees, customized blouses, and contemporary Indo-Western wear tailored exclusively to capture your unique elegance.
+          </p>
+          <div class="hero-btns">
+            <a href="#portfolio" class="btn btn-primary">Explore Collection</a>
+            <a href="#contact" class="btn btn-secondary">Book Consultation</a>
+          </div>
+        </div>
+        <div class="hero-image-container">
+          <div class="hero-image-wrapper">
+            <img src="images/work-1.jpg" alt="Featured Red Bridal Lehenga" id="hero-img">
+          </div>
+          <div class="hero-image-backdrop"></div>
+          <div class="hero-floating-card">
+            <i class="fa-solid fa-gem"></i>
+            <div class="floating-card-info">
+              <h4>Bridal Masterpiece</h4>
+              <p>Velvet &amp; Zardozi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PORTFOLIO SECTION
+       ============================================ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <span class="section-tag">Our Masterpieces</span>
+      <h2 class="section-title">Past <span>Creations</span></h2>
+      <div class="luxury-divider"><span>⚜</span></div>
+      <p class="section-desc">
+        Take a glance through our curation of customized designer outfits crafted with fine fabrics and hand-detailed craftsmanship. Click on any outfit to view styling details and make inquiries.
+      </p>
+
+      <!-- Category Filter Buttons -->
+      <div class="portfolio-filters" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Designs</button>
+        <button class="filter-btn" data-filter="bridal">Bridal Lehengas</button>
+        <button class="filter-btn" data-filter="sarees">Designer Sarees</button>
+        <button class="filter-btn" data-filter="blouses">Custom Blouses</button>
+        <button class="filter-btn" data-filter="indo-western">Indo-Western</button>
+        <button class="filter-btn" data-filter="salwars">Anarkali &amp; Suits</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        
+        <!-- Item 1 -->
+        <div class="portfolio-item" data-category="bridal" data-id="1">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-1.jpg" alt="Royal Velvet Bridal Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Bridal Lehenga</span>
+              <h3 class="overlay-title">Royal Velvet Bridal Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Bridal Lehenga</span>
+            <h3 class="item-title">Royal Velvet Bridal Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-item" data-category="indo-western" data-id="2">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-2.jpg" alt="Champagne Sequined Gown" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Indo-Western</span>
+              <h3 class="overlay-title">Champagne Sequined Gown</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Indo-Western</span>
+            <h3 class="item-title">Champagne Sequined Gown</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-item" data-category="salwars" data-id="3">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-3.jpg" alt="Pastel Floral Georgette Anarkali" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Anarkali &amp; Suits</span>
+              <h3 class="overlay-title">Pastel Floral Anarkali</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Anarkali &amp; Suits</span>
+            <h3 class="item-title">Pastel Floral Anarkali</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-item" data-category="blouses" data-id="4">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-4.jpg" alt="Teal Hand-Crafted Cutwork Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Teal Cutwork Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Teal Cutwork Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-item" data-category="sarees" data-id="5">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-5.jpg" alt="Emerald Green Banarasi Silk Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Designer Sarees</span>
+              <h3 class="overlay-title">Emerald Silk Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Designer Sarees</span>
+            <h3 class="item-title">Emerald Silk Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-item" data-category="bridal" data-id="6">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-6.jpg" alt="Peach Organza Mirror-Work Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Bridal Lehenga</span>
+              <h3 class="overlay-title">Peach Organza Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Bridal Lehenga</span>
+            <h3 class="item-title">Peach Organza Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="portfolio-item" data-category="blouses" data-id="7">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-7.jpg" alt="Royal Velvet Sweetheart Neck Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Velvet Sweetheart Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Velvet Sweetheart Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="portfolio-item" data-category="indo-western" data-id="8">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-8.jpg" alt="Modern Ruffled Pre-Stitched Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Indo-Western</span>
+              <h3 class="overlay-title">Ruffled Pre-Stitched Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Indo-Western</span>
+            <h3 class="item-title">Ruffled Pre-Stitched Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="portfolio-item" data-category="salwars" data-id="9">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-9.jpg" alt="Magenta Silk Anarkali Suit" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Anarkali &amp; Suits</span>
+              <h3 class="overlay-title">Magenta Silk Anarkali</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Anarkali &amp; Suits</span>
+            <h3 class="item-title">Magenta Silk Anarkali</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="portfolio-item" data-category="blouses" data-id="10">
+          <div class="portfolio-item-img-wrapper">
+            <img src="images/work-10.jpg" alt="Golden Embroidered Zari Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Golden Zari Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Golden Zari Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT ATELIER SECTION
+       ============================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="images/work-6.jpg" alt="Devi Atelier Design Process">
+          </div>
+          <div class="about-img-sub">
+            <img src="images/work-10.jpg" alt="Devi Handcrafted details">
+          </div>
+          <div class="about-img-frame"></div>
+        </div>
+        <div class="about-content">
+          <span class="section-tag" style="text-align: left;">Our Story &amp; Ethos</span>
+          <h2 class="section-title" style="text-align: left;">Meet Devi &amp; Her <span>Creative Vision</span></h2>
+          <div class="luxury-divider" style="margin-left: 0;"><span>⚜</span></div>
+          <div class="about-text">
+            <p>
+              Founded by master designer Devi, our boutique atelier is dedicated to reviving classic tailoring techniques combined with modern visual elegance. We believe that every custom outfit tells a story, and the perfect garment begins with selection of premium materials and exact cuts.
+            </p>
+            <p>
+              Whether designing a heavy bridal trousseau or a modern pre-stitched party wear saree, we focus on detailed embellishments, sturdy drapes, and flawless tailoring. Every fitting session is personal, ensuring your boutique experience is comforting and results in a design that matches your aesthetic dreams.
+            </p>
+          </div>
+          <div class="expertise-list">
+            <div class="expertise-item">
+              <i class="fa-solid fa-compass-drafting"></i>
+              <div>
+                <h4>Custom Patterns</h4>
+                <p>Specially drafted patterns mapping to individual measurements.</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <i class="fa-solid fa-scissors"></i>
+              <div>
+                <h4>Fine Fabrics</h4>
+                <p>Sourcing rich silks, velvets, georgettes, and heavy organza.</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <i class="fa-solid fa-certificate"></i>
+              <div>
+                <h4>Hand Craftsmanship</h4>
+                <p>Authentic zardozi, hand embroidery, mirror, and bead embellishments.</p>
+              </div>
+            </div>
+            <div class="expertise-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h4>On-Time Delivery</h4>
+                <p>Committed to meeting timelines, specifically for festive events and weddings.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES SECTION
+       ============================================ -->
+  <section class="services" id="services">
+    <div class="container">
+      <span class="section-tag">Custom Tailoring Services</span>
+      <h2 class="section-title">Atelier <span>Expertise</span></h2>
+      <div class="luxury-divider"><span>⚜</span></div>
+      <p class="section-desc">
+        We specialize in a broad spectrum of customization services, providing you with a complete bridal and festive attire solution under one roof.
+      </p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3>Bridal Trousseaus</h3>
+          <p>Complete custom bridal styling, designing, and stitching of heavy bridal lehengas, silk sarees, and dupattas tailored for your special days.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-vest-patches"></i></div>
+          <h3>Bespoke Blouses</h3>
+          <p>Aari hand embroidery, machine work, princess cuts, high necklines, sweetheart cuts, and heavily embellished custom bridal blouses.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Indo-Western Couture</h3>
+          <p>Modern pre-stitched sarees, designer draped skirts, coordinates, capes, ruffled gowns, and contemporary fusion silhouettes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT & BOOKING SECTION
+       ============================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="section-tag" style="text-align: left;">Get In Touch</span>
+          <h2 class="contact-info-title">Let's Craft Your <span>Next Masterpiece</span></h2>
+          <p class="contact-info-desc">
+            Ready to design your custom dress? Fill out this consultation form, or click on the floating WhatsApp widget to talk to Devi directly about designs, fabric suggestions, and pricing details.
+          </p>
+          
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <div class="contact-detail-text">
+                <h4>Atelier Location</h4>
+                <p>Devi Boutique, Bangalore, India</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="contact-detail-text">
+                <h4>WhatsApp Consultation</h4>
+                <p>+91 98765 43210</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <div class="contact-detail-text">
+                <h4>Email Inquiries</h4>
+                <p>inquire@deviatelier.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        
+        <div class="contact-form-wrapper">
+          <form id="consultation-form">
+            <div class="form-group">
+              <label for="client-name">Your Full Name</label>
+              <input type="text" id="client-name" class="form-control" placeholder="e.g. Priyal Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="client-contact">WhatsApp Phone Number</label>
+              <input type="tel" id="client-contact" class="form-control" placeholder="e.g. +91 99999 88888" required>
+            </div>
+            <div class="form-group">
+              <label for="outfit-type">Desired Outfit Category</label>
+              <select id="outfit-type" class="form-control" required>
+                <option value="" disabled selected>Select an outfit style</option>
+                <option value="Bridal Lehenga">Bridal Lehenga</option>
+                <option value="Designer Saree Work">Designer Saree &amp; Borders</option>
+                <option value="Custom Blouse Design">Custom Tailored Blouse</option>
+                <option value="Indo-Western / Gown">Indo-Western Dress or Gown</option>
+                <option value="Anarkali or Salwar Suit">Anarkali Suit / Salwar Kameez</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="client-message">Describe Your Design Ideas (Optional)</label>
+              <textarea id="client-message" class="form-control" placeholder="Tell us about your choice of colors, neck designs, sleeves, fabrics, or wedding date..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit-btn" id="form-submit">
+              <i class="fa-brands fa-whatsapp"></i> Send Inquiry on WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LIGHTBOX / DETAILED MODAL
+       ============================================ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close detailed view">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-pane">
+        <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Outfit">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img src="images/work-1.jpg" alt="Detailed Outfit View" id="lightbox-main-img">
+        <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next Outfit">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-info-pane">
+        <span class="lightbox-category" id="lightbox-category">Bridal Lehenga</span>
+        <h2 class="lightbox-title" id="lightbox-title">Royal Velvet Bridal Lehenga</h2>
+        <p class="lightbox-desc" id="lightbox-desc">
+          Intricately hand-embroidered velvet bridal lehenga in deep crimson red featuring standard zardozi stitching, heavy beadwork, and matched with double tissue georgette dupattas.
+        </p>
+        
+        <div class="lightbox-details">
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Design Code:</span>
+            <span class="lightbox-detail-val" id="lightbox-code">DA-2026-01</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Fabrics:</span>
+            <span class="lightbox-detail-val" id="lightbox-fabrics">Velvet, Organza, Silk Silk</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Embroidery:</span>
+            <span class="lightbox-detail-val" id="lightbox-embroidery">Zardozi, Beads, Cutdana Work</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Fit Time:</span>
+            <span class="lightbox-detail-val" id="lightbox-fittime">4 - 6 Weeks</span>
+          </div>
+        </div>
+        
+        <button class="btn btn-gold lightbox-action-btn" id="lightbox-inquiry-btn">
+          <i class="fa-brands fa-whatsapp"></i> Inquire About This Design
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SHARE SHEET MODAL
+       ============================================ -->
+  <div class="share-modal" id="share-modal">
+    <div class="share-content">
+      <button class="share-close" id="share-modal-close" aria-label="Close share popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="share-header">
+        <i class="fa-solid fa-award"></i>
+        <h3>Share Portfolio</h3>
+        <p>Send Devi's design portfolio directly to a customer's phone or let them scan this QR code.</p>
+      </div>
+      
+      <div class="qr-box">
+        <img src="" alt="Portfolio QR Code" id="share-qr-img">
+      </div>
+      
+      <div class="share-actions">
+        <div class="share-link-box">
+          <input type="text" class="share-link-input" id="share-link-url" readonly>
+          <button class="share-copy-btn" id="share-copy-btn">Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FLOATING WHATSAPP BUTTON WITH PULSE
+       ============================================ -->
+  <a href="https://wa.me/919876543210?text=Hi%20Devi!%20I'm%20visiting%20your%20boutique%20portfolio%20and%20would%20like%20to%20discuss%20stitching%20a%20dress." 
+     class="whatsapp-float" 
+     id="whatsapp-floating-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contact Devi Boutique on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>DEVI<span>ATELIER</span></h2>
+          <p>Designing modern luxury ethnic wear customized to make you shine at every celebratory event. Experience bespoke tailoring at its finest.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-wrapper">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Our Designs</a></li>
+            <li><a href="#about">The Atelier</a></li>
+            <li><a href="#services">Tailoring Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3 class="footer-title">Contact &amp; Hours</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Devi Boutique, Bangalore, India</p>
+          <p><i class="fa-solid fa-clock"></i> Mon - Sat: 10:30 AM - 8:00 PM</p>
+          <p><i class="fa-solid fa-phone"></i> +91 98765 43210 (Consultations only)</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Devi Atelier. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Custom Orders</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- State Variables ---
   let activeVisibleIds = []; // Stores IDs of currently visible designs based on filter
   let currentDesignIndex = 0; // Tracks index within activeVisibleIds
-  const whatsappBaseNumber = "919876543210"; // Devi's Boutique WhatsApp Contact
+  const whatsappBaseNumber = "917382955659"; // Devi's Boutique WhatsApp Contact
 
   // --- Element Selectors ---
   const navbar = document.getElementById('navbar');

@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devi Atelier — Haute Couture & Designer Boutique Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore Devi Atelier - Premium fashion boutique showcasing custom-tailored bridal lehengas, designer sarees, bespoke blouses, and contemporary Indo-Western wear.">
+  <meta name="keywords" content="Boutique, Custom Tailoring, Bridal Lehenga, Designer Saree, Devi Atelier, Bespoke Fashion, Blouse Design">
+  <meta name="author" content="Devi Atelier">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Devi Atelier — Designer Boutique & Custom Tailoring">
+  <meta property="og:description" content="Immersive showcase of bespoke designer outfits. Custom lehengas, sarees, blouses, and Indo-Western couture crafted to perfection.">
+  <meta property="og:image" content="images/work-1.jpg">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Favicon & Web App Manifest -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Mobile Web App Capability -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#fcfaf7">
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVIGATION BAR
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html#hero" class="logo" id="nav-logo">
+        DEVI<span>ATELIER</span>
+        <span class="logo-sub">HAUTE COUTURE</span>
+      </a>
+      
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html#hero" class="nav-link">Home</a></li>
+        <li><a href="collection.html" class="nav-link">Collection</a></li>
+        <li><a href="index.html#about" class="nav-link">Atelier</a></li>
+        <li><a href="index.html#services" class="nav-link">Services</a></li>
+        <li><a href="index.html#contact" class="nav-link">Consultation</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="btn btn-primary" id="header-share-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-share-nodes"></i> Share
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       PORTFOLIO SECTION
+       ============================================ -->
+  <section class="portfolio reveal" id="portfolio">
+    <div class="container">
+      <span class="section-tag">Our Masterpieces</span>
+      <h2 class="section-title">Past <span>Creations</span></h2>
+      <div class="luxury-divider"><span>⚜</span></div>
+      <p class="section-desc">
+        Take a glance through our curation of customized designer outfits crafted with fine fabrics and hand-detailed craftsmanship. Click on any outfit to view styling details and make inquiries.
+      </p>
+
+      <!-- Category Filter Buttons -->
+      <div class="portfolio-filters" id="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Designs</button>
+        <button class="filter-btn" data-filter="favorites" id="favorites-filter-btn"><i class="fa-solid fa-heart"></i> My Favorites</button>
+        <button class="filter-btn" data-filter="prepleating">Saree Pre-Pleating</button>
+        <button class="filter-btn" data-filter="bridal">Bridal Lehengas</button>
+        <button class="filter-btn" data-filter="sarees">Designer Sarees</button>
+        <button class="filter-btn" data-filter="blouses">Custom Blouses</button>
+        <button class="filter-btn" data-filter="bangles">Thread Bangles</button>
+        <button class="filter-btn" data-filter="kids">Kids Wear</button>
+        <button class="filter-btn" data-filter="indo-western">Indo-Western</button>
+        <button class="filter-btn" data-filter="salwars">Anarkali &amp; Suits</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        
+        <!-- Item 1 -->
+        <div class="portfolio-item" data-category="bridal" data-id="1">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-signature">Signature</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="1">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-1.jpg" alt="Royal Velvet Bridal Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Bridal Lehenga</span>
+              <h3 class="overlay-title">Royal Velvet Bridal Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Bridal Lehenga</span>
+            <h3 class="item-title">Royal Velvet Bridal Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="portfolio-item" data-category="indo-western" data-id="2">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-trending">Trending</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="2">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-2.jpg" alt="Champagne Sequined Gown" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Indo-Western</span>
+              <h3 class="overlay-title">Champagne Sequined Gown</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Indo-Western</span>
+            <h3 class="item-title">Champagne Sequined Gown</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="portfolio-item" data-category="salwars" data-id="3">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-new">New Arrival</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="3">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-3.jpg" alt="Pastel Floral Georgette Anarkali" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Anarkali &amp; Suits</span>
+              <h3 class="overlay-title">Pastel Floral Anarkali</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Anarkali &amp; Suits</span>
+            <h3 class="item-title">Pastel Floral Anarkali</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="portfolio-item" data-category="blouses" data-id="4">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="4">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-4.jpg" alt="Teal Hand-Crafted Cutwork Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Teal Cutwork Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Teal Cutwork Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="portfolio-item" data-category="sarees" data-id="5">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-signature">Best Seller</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="5">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-5.jpg" alt="Emerald Green Banarasi Silk Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Designer Sarees</span>
+              <h3 class="overlay-title">Emerald Silk Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Designer Sarees</span>
+            <h3 class="item-title">Emerald Silk Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="portfolio-item" data-category="bridal" data-id="6">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-new">New Arrival</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="6">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-6.jpg" alt="Peach Organza Mirror-Work Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Bridal Lehenga</span>
+              <h3 class="overlay-title">Peach Organza Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Bridal Lehenga</span>
+            <h3 class="item-title">Peach Organza Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="portfolio-item" data-category="blouses" data-id="7">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="7">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-7.jpg" alt="Royal Velvet Sweetheart Neck Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Velvet Sweetheart Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Velvet Sweetheart Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="portfolio-item" data-category="indo-western" data-id="8">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="8">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-8.jpg" alt="Modern Ruffled Pre-Stitched Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Indo-Western</span>
+              <h3 class="overlay-title">Ruffled Pre-Stitched Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Indo-Western</span>
+            <h3 class="item-title">Ruffled Pre-Stitched Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="portfolio-item" data-category="salwars" data-id="9">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="9">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-9.jpg" alt="Magenta Silk Anarkali Suit" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Anarkali &amp; Suits</span>
+              <h3 class="overlay-title">Magenta Silk Anarkali</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Anarkali &amp; Suits</span>
+            <h3 class="item-title">Magenta Silk Anarkali</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="portfolio-item" data-category="blouses" data-id="10">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-signature">Best Seller</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="10">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-10.jpg" alt="Golden Embroidered Zari Blouse" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Custom Blouses</span>
+              <h3 class="overlay-title">Golden Zari Blouse</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Custom Blouses</span>
+            <h3 class="item-title">Golden Zari Blouse</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 11: Pre-Pleating 1 -->
+        <div class="portfolio-item" data-category="prepleating" data-id="11">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-signature">Core Work</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="11">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-11.jpg" alt="Signature Saree Pre-Pleating & Box Folding" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Saree Pre-Pleating</span>
+              <h3 class="overlay-title">Signature Saree Pre-Pleating</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Saree Pre-Pleating</span>
+            <h3 class="item-title">Signature Saree Pre-Pleating</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 12: Pre-Pleating 2 -->
+        <div class="portfolio-item" data-category="prepleating" data-id="12">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-signature">Core Work</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="12">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-12.jpg" alt="Bridal Silk Saree Pre-Pleating Setup" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Saree Pre-Pleating</span>
+              <h3 class="overlay-title">Bridal Silk Pre-Pleating</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Saree Pre-Pleating</span>
+            <h3 class="item-title">Bridal Silk Pre-Pleating</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 13: Bangle 1 -->
+        <div class="portfolio-item" data-category="bangles" data-id="13">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-trending">Trending</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="13">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-13.jpg" alt="Magenta Silk Thread Bangle Set" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Thread Bangles</span>
+              <h3 class="overlay-title">Magenta Thread Bangle Set</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Thread Bangles</span>
+            <h3 class="item-title">Magenta Thread Bangle Set</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 14: Bangle 2 -->
+        <div class="portfolio-item" data-category="bangles" data-id="14">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="14">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-14.jpg" alt="Emerald Designer Bangle Set" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Thread Bangles</span>
+              <h3 class="overlay-title">Emerald &amp; Gold Bangle Set</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Thread Bangles</span>
+            <h3 class="item-title">Emerald &amp; Gold Bangle Set</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 15: Bangle 3 -->
+        <div class="portfolio-item" data-category="bangles" data-id="15">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="15">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-15.jpg" alt="Peacock Blue Kundan Bangles" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Thread Bangles</span>
+              <h3 class="overlay-title">Peacock Blue Kundan Bangles</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Thread Bangles</span>
+            <h3 class="item-title">Peacock Blue Kundan Bangles</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 16: Bangle 4 -->
+        <div class="portfolio-item" data-category="bangles" data-id="16">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="16">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-16.jpg" alt="Pastel Pink Pearl Bangles" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Thread Bangles</span>
+              <h3 class="overlay-title">Pastel Pink Pearl Bangles</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Thread Bangles</span>
+            <h3 class="item-title">Pastel Pink Pearl Bangles</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 17: Bangle 5 -->
+        <div class="portfolio-item" data-category="bangles" data-id="17">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="17">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-17.jpg" alt="Royal Maroon Bridal Chooda Set" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Thread Bangles</span>
+              <h3 class="overlay-title">Maroon Bridal Chooda Set</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Thread Bangles</span>
+            <h3 class="item-title">Maroon Bridal Chooda Set</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 18: Pre-Pleating 3 -->
+        <div class="portfolio-item" data-category="prepleating" data-id="18">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-new">New Arrival</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="18">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-18.jpg" alt="Peach Orange Pre-Pleated Lehenga Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Saree Pre-Pleating</span>
+              <h3 class="overlay-title">Peach Orange Lehenga Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Saree Pre-Pleating</span>
+            <h3 class="item-title">Peach Orange Lehenga Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 19: Pre-Pleating 4 -->
+        <div class="portfolio-item" data-category="prepleating" data-id="19">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="19">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-19.jpg" alt="Pastel Pink Floral Pre-Pleated Saree" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Saree Pre-Pleating</span>
+              <h3 class="overlay-title">Pastel Pink Floral Saree</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Saree Pre-Pleating</span>
+            <h3 class="item-title">Pastel Pink Floral Saree</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 20: Kids 3 -->
+        <div class="portfolio-item" data-category="kids" data-id="20">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="20">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-20.jpg" alt="Gold Brocade Kids Suit" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Gold Brocade Anarkali Dress</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Gold Brocade Anarkali Dress</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 21: Kids 4 -->
+        <div class="portfolio-item" data-category="kids" data-id="21">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="21">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-21.jpg" alt="Yellow Floral Kids Dress" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Yellow Floral Dress</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Yellow Floral Dress</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 22: Kids 5 -->
+        <div class="portfolio-item" data-category="kids" data-id="22">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="22">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-22.jpg" alt="Sky Blue Layered Tulle Gown" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Sky Blue Tulle Gown</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Sky Blue Tulle Gown</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 23: Kids 6 -->
+        <div class="portfolio-item" data-category="kids" data-id="23">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="23">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-23.jpg" alt="Red Velvet Kids Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Red Velvet Kids Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Red Velvet Kids Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 24: Kids 7 -->
+        <div class="portfolio-item" data-category="kids" data-id="24">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="24">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-24.jpg" alt="Mint Green Organza Kids Frock" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Mint Green Organza Frock</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Mint Green Organza Frock</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 25: Kids 8 -->
+        <div class="portfolio-item" data-category="kids" data-id="25">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="25">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-25.jpg" alt="Royal Blue Kids Pattu Langa" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Royal Blue Pattu Langa</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Royal Blue Pattu Langa</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 26: Kids 9 -->
+        <div class="portfolio-item" data-category="kids" data-id="26">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="26">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-26.jpg" alt="Lavender Net Kids Party Gown" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Lavender Net Party Gown</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Lavender Net Party Gown</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 27: Kids 10 -->
+        <div class="portfolio-item" data-category="kids" data-id="27">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="27">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-27.jpg" alt="Festive Orange Kids Salwar Suit" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Festive Orange Salwar Suit</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Festive Orange Salwar Suit</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 28: Kids 11 -->
+        <div class="portfolio-item" data-category="kids" data-id="28">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="28">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-28.jpg" alt="Maroon Velvet Kids Frock" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Maroon Velvet Frock</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Maroon Velvet Frock</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 29: Kids 12 -->
+        <div class="portfolio-item" data-category="kids" data-id="29">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Badge -->
+            <span class="card-badge badge-trending">Trending</span>
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="29">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-29.jpg" alt="Pink Ruffled Kids Designer Gown" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Pink Ruffled Designer Gown</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Pink Ruffled Designer Gown</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 30: Kids 13 -->
+        <div class="portfolio-item" data-category="kids" data-id="30">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="30">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-30.jpg" alt="Green Silk Kids Kurta Set" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Green Silk Kurta Set</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Green Silk Kurta Set</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 31: Kids 14 -->
+        <div class="portfolio-item" data-category="kids" data-id="31">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="31">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-31.jpg" alt="Golden Organza Kids Lehenga" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Golden Organza Lehenga</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Golden Organza Lehenga</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+        <!-- Item 32: Kids 15 -->
+        <div class="portfolio-item" data-category="kids" data-id="32">
+          <div class="portfolio-item-img-wrapper">
+            <!-- Wishlist Heart Button -->
+            <button class="wishlist-btn" aria-label="Add to Favorites" data-wishlist-id="32">
+              <i class="fa-regular fa-heart"></i>
+            </button>
+            <img src="images/work-32.jpg" alt="Navy Blue Silk Kids Frock" loading="lazy">
+            <div class="portfolio-item-overlay">
+              <span class="overlay-tag">Kids Wear</span>
+              <h3 class="overlay-title">Navy Blue Silk Frock</h3>
+              <button class="overlay-btn"><i class="fa-solid fa-eye"></i> View Details</button>
+            </div>
+          </div>
+          <div class="portfolio-item-info">
+            <span class="item-category">Kids Wear</span>
+            <h3 class="item-title">Navy Blue Silk Frock</h3>
+            <button class="item-inquire-btn"><i class="fa-solid fa-eye"></i> Details &amp; Inquiry</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LIGHTBOX / DETAILED MODAL
+       ============================================ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close detailed view">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-pane">
+        <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Outfit">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img src="images/work-1.jpg" alt="Detailed Outfit View" id="lightbox-main-img">
+        <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next Outfit">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="lightbox-info-pane">
+        <span class="lightbox-category" id="lightbox-category">Bridal Lehenga</span>
+        <h2 class="lightbox-title" id="lightbox-title">Royal Velvet Bridal Lehenga</h2>
+        <p class="lightbox-desc" id="lightbox-desc">
+          Intricately hand-embroidered velvet bridal lehenga in deep crimson red featuring standard zardozi stitching, heavy beadwork, and matched with double tissue georgette dupattas.
+        </p>
+        
+        <div class="lightbox-details">
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Design Code:</span>
+            <span class="lightbox-detail-val" id="lightbox-code">DA-2026-01</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Fabrics:</span>
+            <span class="lightbox-detail-val" id="lightbox-fabrics">Velvet, Organza, Silk Silk</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Embroidery:</span>
+            <span class="lightbox-detail-val" id="lightbox-embroidery">Zardozi, Beads, Cutdana Work</span>
+          </div>
+          <div class="lightbox-detail-row">
+            <span class="lightbox-detail-label">Fit Time:</span>
+            <span class="lightbox-detail-val" id="lightbox-fittime">4 - 6 Weeks</span>
+          </div>
+        </div>
+        
+        <button class="btn btn-gold lightbox-action-btn" id="lightbox-inquiry-btn">
+          <i class="fa-brands fa-whatsapp"></i> Inquire About This Design
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       SHARE SHEET MODAL
+       ============================================ -->
+  <div class="share-modal" id="share-modal">
+    <div class="share-content">
+      <button class="share-close" id="share-modal-close" aria-label="Close share popup">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="share-header">
+        <i class="fa-solid fa-award"></i>
+        <h3>Share Portfolio</h3>
+        <p>Send Devi's design portfolio directly to a customer's phone or let them scan this QR code.</p>
+      </div>
+      
+      <div class="qr-box">
+        <img src="" alt="Portfolio QR Code" id="share-qr-img">
+      </div>
+      
+      <div class="share-actions">
+        <div class="share-link-box">
+          <input type="text" class="share-link-input" id="share-link-url" readonly>
+          <button class="share-copy-btn" id="share-copy-btn">Copy Link</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FLOATING WHATSAPP BUTTON WITH PULSE
+       ============================================ -->
+  <a href="https://wa.me/917382955659?text=Hi%20Devi!%20I'm%20visiting%20your%20boutique%20portfolio%20and%20would%20like%20to%20discuss%20stitching%20a%20dress." 
+     class="whatsapp-float" 
+     id="whatsapp-floating-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Contact Devi Boutique on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-pulse"></span>
+  </a>
+
+
+  <!-- ============================================
+       INSTAGRAM STYLE GALLERY SECTION
+       ============================================ -->
+  <section class="instagram reveal" id="instagram">
+    <div class="container">
+      <span class="section-tag">Follow Our Journey</span>
+      <h2 class="section-title">Atelier <span>Diary</span></h2>
+      <div class="luxury-divider"><span>⚜</span></div>
+      <p class="section-desc">
+        Take a peek behind the scenes at fabrics, embroidery setups, and work in progress.
+      </p>
+      
+      <div class="insta-grid">
+        <!-- Item 1 -->
+        <div class="insta-item">
+          <img src="images/work-4.jpg" alt="Bead embroidery close-up">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <!-- Item 2 -->
+        <div class="insta-item">
+          <img src="images/work-7.jpg" alt="Sweetheart neck details">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <!-- Item 3 -->
+        <div class="insta-item">
+          <img src="images/work-10.jpg" alt="Zari embroidery work">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <!-- Item 4 -->
+        <div class="insta-item">
+          <img src="images/work-11.jpg" alt="Saree pre-pleating setups">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <!-- Item 5 -->
+        <div class="insta-item">
+          <img src="images/work-13.jpg" alt="Thread bangles layout">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+        <!-- Item 6 -->
+        <div class="insta-item">
+          <img src="images/work-18.jpg" alt="Organza kids frock fabric">
+          <div class="insta-overlay"><i class="fa-brands fa-instagram"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>DEVI<span>ATELIER</span></h2>
+          <p>Designing modern luxury ethnic wear customized to make you shine at every celebratory event. Experience bespoke tailoring at its finest.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          </div>
+        </div>
+        <div class="footer-links-wrapper">
+          <h3 class="footer-title">Explore</h3>
+          <ul class="footer-links">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="collection.html">Our Designs</a></li>
+            <li><a href="index.html#about">The Atelier</a></li>
+            <li><a href="index.html#services">Tailoring Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h3 class="footer-title">Contact &amp; Hours</h3>
+          <p><i class="fa-solid fa-location-dot"></i> Devi Boutique, Chinnamusidivada, Visakhapatnam, Andhra Pradesh</p>
+          <p><i class="fa-solid fa-clock"></i> Mon - Sat: 10:30 AM - 8:00 PM</p>
+          <p><i class="fa-solid fa-phone"></i> +91 73829 55659 (Consultations only)</p>
+        </div>
+      </div>
+      <!-- Developer Attribution Banner -->
+      <div class="developer-credit" style="border-top: 1px solid var(--border-color); margin-top: 3rem; padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div style="max-width: 600px; text-align: left;">
+          <h4 style="font-family: var(--font-serif); font-size: 1.15rem; color: var(--accent-rose); margin-bottom: 0.35rem; font-weight: 600;">Need a Custom Application for Your Business?</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5; margin: 0;">
+            We design, build, test, and deploy premium, high-converting portfolios, catalogs, and boutique booking applications like this one to help local business owners grow.
+          </p>
+        </div>
+        <div>
+          <a href="https://wa.me/918328589276?text=Hi%20Chetan!%20I%20saw%20your%20boutique%20app%20design%20and%20want%20to%20consult%20for%20a%20business%20application." target="_blank" rel="noopener noreferrer" class="btn" style="padding: 0.7rem 1.5rem; font-size: 0.85rem; background: linear-gradient(135deg, var(--accent-rose) 0%, var(--accent-gold) 100%); border: none; color: #fff; border-radius: 30px; display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none; font-weight: 600; box-shadow: var(--shadow-sm); transition: var(--transition-fast);">
+            <i class="fa-brands fa-whatsapp"></i> Build Your App with Chetan
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Devi Atelier. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Custom Orders</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>

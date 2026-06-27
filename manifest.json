@@ -1,0 +1,17 @@
+{
+  "short_name": "Devi Atelier",
+  "name": "Devi Atelier — Boutique Portfolio",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "background_color": "#fcfaf7",
+  "theme_color": "#b76e79",
+  "display": "standalone",
+  "orientation": "portrait"
+}

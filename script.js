@@ -431,12 +431,23 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.classList.add('active');
 
       const filterValue = btn.getAttribute('data-filter');
+      const favorites = JSON.parse(localStorage.getItem('devi_favorites')) || [];
       
       // Filter portfolio DOM cards
       portfolioItems.forEach(item => {
         const itemCategory = item.getAttribute('data-category');
+        const id = parseInt(item.getAttribute('data-id'));
         
-        if (filterValue === 'all' || itemCategory === filterValue) {
+        let showItem = false;
+        if (filterValue === 'all') {
+          showItem = true;
+        } else if (filterValue === 'favorites') {
+          showItem = favorites.includes(id);
+        } else {
+          showItem = (itemCategory === filterValue);
+        }
+        
+        if (showItem) {
           item.classList.remove('hidden');
           // Reset card animation
           item.style.animation = 'none';
@@ -454,10 +465,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateVisibleItemIds(filter) {
     activeVisibleIds = [];
+    const favorites = JSON.parse(localStorage.getItem('devi_favorites')) || [];
     portfolioItems.forEach(item => {
       const itemCategory = item.getAttribute('data-category');
       const id = parseInt(item.getAttribute('data-id'));
-      if (filter === 'all' || itemCategory === filter) {
+      
+      if (filter === 'favorites') {
+        if (favorites.includes(id)) {
+          activeVisibleIds.push(id);
+        }
+      } else if (filter === 'all' || itemCategory === filter) {
         activeVisibleIds.push(id);
       }
     });
@@ -474,6 +491,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     detailBtns.forEach(btn => {
       btn.addEventListener('click', (e) => {
+        // Prevent lightbox from opening if clicking the wishlist heart button
+        if (e.target.closest('.wishlist-btn')) {
+          return;
+        }
         e.stopPropagation();
         openLightbox(id);
       });
@@ -640,6 +661,94 @@ document.addEventListener('DOMContentLoaded', () => {
       const whatsappUrl = `https://wa.me/${whatsappBaseNumber}?text=${encodeURIComponent(text)}`;
       window.open(whatsappUrl, '_blank');
     });
+  }
+
+  // ==========================================================================
+  // WISHLIST LOGIC (LOCAL STORAGE & TOGGLING)
+  // ==========================================================================
+  const wishlistBtns = document.querySelectorAll('.wishlist-btn');
+  
+  // Load and apply favorite states on load
+  function initializeWishlist() {
+    const favorites = JSON.parse(localStorage.getItem('devi_favorites')) || [];
+    wishlistBtns.forEach(btn => {
+      const id = parseInt(btn.getAttribute('data-wishlist-id'));
+      const icon = btn.querySelector('i');
+      
+      if (favorites.includes(id)) {
+        btn.classList.add('active');
+        icon.className = 'fa-solid fa-heart';
+      } else {
+        btn.classList.remove('active');
+        icon.className = 'fa-regular fa-heart';
+      }
+    });
+  }
+  
+  initializeWishlist();
+
+  // Attach click listener to wishlist buttons
+  wishlistBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation(); // Stop click from bubbling to card detail trigger
+      
+      const id = parseInt(btn.getAttribute('data-wishlist-id'));
+      const icon = btn.querySelector('i');
+      let favorites = JSON.parse(localStorage.getItem('devi_favorites')) || [];
+      
+      if (btn.classList.contains('active')) {
+        // Remove from favorites
+        btn.classList.remove('active');
+        icon.className = 'fa-regular fa-heart';
+        favorites = favorites.filter(favId => favId !== id);
+      } else {
+        // Add to favorites
+        btn.classList.add('active');
+        icon.className = 'fa-solid fa-heart';
+        if (!favorites.includes(id)) {
+          favorites.push(id);
+        }
+      }
+      
+      localStorage.setItem('devi_favorites', JSON.stringify(favorites));
+      
+      // If we are currently on the 'favorites' filter view, dynamically hide card
+      const activeFilterBtn = document.querySelector('.filter-btn.active');
+      if (activeFilterBtn && activeFilterBtn.getAttribute('data-filter') === 'favorites') {
+        const card = btn.closest('.portfolio-item');
+        if (card && !favorites.includes(id)) {
+          card.classList.add('hidden');
+          updateVisibleItemIds('favorites');
+        }
+      }
+    });
+  });
+
+  // ==========================================================================
+  // SCROLL REVEAL INTERSECTION OBSERVER
+  // ==========================================================================
+  const revealElements = document.querySelectorAll('.reveal');
+  
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Trigger only once
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+    
+    revealElements.forEach(el => {
+      revealObserver.observe(el);
+    });
+  } else {
+    // Fallback if browser doesn't support IntersectionObserver
+    revealElements.forEach(el => el.classList.add('active'));
   }
 
 });

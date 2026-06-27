@@ -1625,12 +1625,21 @@ textarea.form-control {
     transform: translateY(-8px) rotate(-45deg);
   }
   
+  .hero {
+    height: auto;
+    min-height: auto;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 3rem;
+  }
+  
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
-    padding-top: 6rem;
+    padding-top: 0;
     height: auto;
     min-height: auto;
+    gap: 2rem;
   }
   
   .hero-content {
